@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\TenderManagement.Application\TenderManagement.Application.csproj" />
+    <ProjectReference Include="..\TenderManagement.Domain\TenderManagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.17" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.6" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.1.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Interfaces\Repositories\Dapper\IBidReadRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\Dapper\ILookupReadRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\Dapper\ITenderReadRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\Dapper\IVendorReadRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\Dapper\BidReadRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\StatusRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\Dapper\VendorReadRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\Dapper\TenderReadRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\Dapper\LookupReadRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\UserRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\CategoryRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\VendorRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\BidRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\TenderRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Repositories\GenericRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

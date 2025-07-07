@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TenderManagement.Domain\TenderManagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Interfaces\Repositories\IBidRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\ICategoryRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\IGenericRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\IUserRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\IVendorRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\IStatusRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Interfaces\Repositories\ITenderRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\BidDetailDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\LookupDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\TenderDetailDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\TenderListDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\VendorBidSummaryDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\VendorDetailDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

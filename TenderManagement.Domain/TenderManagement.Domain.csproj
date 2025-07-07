@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Models\Dtos\BidDetailDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\LookupDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\TenderDetailDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\TenderListDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\VendorBidSummaryDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Models\Dtos\VendorDetailDto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
